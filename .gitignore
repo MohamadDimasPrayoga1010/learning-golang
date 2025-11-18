@@ -4,8 +4,8 @@ pkg/
 .vscode/
 
 # Ignore Docker-related files
-Dockerfile
-docker-compose.yml
+# Dockerfile
+# docker-compose.yml
 
 # Ignore environment files
 .env
