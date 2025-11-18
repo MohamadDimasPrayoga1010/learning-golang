@@ -2,6 +2,9 @@
 
 This is a simple CRUD (Create, Read, Update, Delete) application built with **Go (Golang)**, **PostgreSQL**, and **Docker**. The application allows you to manage users through a web interface.
 
+## Preview
+![preview](images/Screenshot%20from%202025-11-18%2017-10-52.png)
+
 ## Features
 - **Create User**: Add a new user with name, department, and email.
 - **Read Users**: View a list of all users.
