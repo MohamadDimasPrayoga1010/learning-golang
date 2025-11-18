@@ -14,13 +14,14 @@ import (
 var db *sql.DB
 
 func init() {
-	databaseURL := os.Getenv("DATABASE_URL")
-	if databaseURL == "" {
+	dbURL := os.Getenv("DATABASE_URL")
+	if dbURL == "" {
 		log.Fatal("DATABASE_URL is not set")
 	}
+	
 
 	var err error
-	db, err = sql.Open("postgres", databaseURL)
+	db, err := sql.Open("postgres", dbURL)
 	if err != nil {
 		log.Fatalf("Failed to open database: %v", err)
 	}
